@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            min-height: 100vh;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        const text = "our users on reacapp.ir are the best";
+        let index = 0;
+
+        function writeText() {
+            document.body.innerHTML = text.slice(0, index);
+            index++;
+
+            if (index > text.length) {
+                index = 0;
+            }
+        }
+
+        setInterval(writeText, 100);
+
+    </script>
+
+</body>
+
+</html>
